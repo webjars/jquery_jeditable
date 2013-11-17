@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery_jeditable</artifactId>
-    <version>1.7.3-SNAPSHOT</version>
+    <version>1.7.3</version>
     <name>jquery_jeditable</name>
     <description>WebJar for jquery_jeditable</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jquery_jeditable</url>
         <connection>scm:git:https://github.com/webjars/jquery_jeditable.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery_jeditable.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery_jeditable-1.7.3</tag>
     </scm>
     
     <dependencies>
@@ -88,7 +88,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jquery_jeditable-${upstream.version}" excludes="contributed/ js/ php/ tests/"/>
+                                    <fileset dir="${project.build.directory}/jquery_jeditable-${upstream.version}" excludes="contributed/ js/ php/ tests/" />
                                 </move>
                             </target>
                         </configuration>
